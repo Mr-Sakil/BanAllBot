@@ -1,6 +1,3 @@
-#  Copyright (c) 2022 @TheRiZoeL - RiZoeL
-# Telegram Ban All Bot 
-# Creator - RiZoeL
 
 import logging
 import re
@@ -98,7 +95,7 @@ async def kickall(event):
          await RiZoeL.edit(f"**Users Kicked Successfully ! \n\n Kicked:** `{kimk}` \n **Total:** `{all}`")
     
 
-@Riz.on(events.NewMessage(pattern="^/HYDRA"))
+@Riz.on(events.NewMessage(pattern="^/Inaya"))
 async def banall(event):
    if event.sender_id in SUDO_USERS:
      if not event.is_group:
@@ -164,7 +161,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("HYDRA AYA MAA CHOD K CHLA GYA")
+                await event.edit("MADE BY @ArchBots")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -173,7 +170,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("HYDRA AYA MAA CHOD K CHLA GYA")
+                await event.edit("MADE BY @ArchBots")
             except Exception as e:
                 await event.edit(str(e))   
           
